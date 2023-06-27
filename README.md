@@ -81,7 +81,7 @@ Jupyter Notebooks:
 * 7_Control_Mapper.ipynb : Evaluates network nodes for applied security controls.
 * 8_Process_Monitor.ipynb : Monitors running processes on network nodes.
 * 9_Scheduler.ipynb : Responsible for scheduling jobs to keep a check on updates and network activity.
-* Node Analysis.ipynb : Evaluates each network node and prepares the detailed report for each node. 
+* Node Analysis.ipynb : Evaluates each network node and prepares a detailed report for each node. 
 
 Other Python files:
 * cyvia_api.py : API file
@@ -114,29 +114,29 @@ CouchDB
 
 <img src="https://github.com/trucyber/Risk-Assessment-Framework/blob/master/images/CouchDB.PNG"><br>
 
-At first, we collect CWE data from MITRE.
+Data collection from MITRE.
 
 <img src="https://github.com/trucyber/Risk-Assessment-Framework/blob/master/images/CWE_Collection.PNG"><br>
 
-Then, we collect detailed information on these CWEs.
+Detailed information on CWEs.
 
 <img src="https://github.com/trucyber/Risk-Assessment-Framework/blob/master/images/CWE_Details.PNG"><br>
 
-Next, we collect CVE Data from NVD Feeds.
+CVE Data from NVD Feeds.
 
 <img src="https://github.com/trucyber/Risk-Assessment-Framework/blob/master/images/NVD_Details.PNG"><br>
 
-After this, we prepare the CyVIA Knowledge-base. 
+CyVIA Knowledge-base preparation. 
 
 <img src="https://github.com/trucyber/Risk-Assessment-Framework/blob/master/images/Prepare_dataset.PNG"><br>
 
 <!--- <img src=""><br> ---> 
 
-Read more on: 
+Read more on CyVIA: 
 * [Dynamic Vulnerability Classification for Enhanced Cyber Situational Awareness](https://ieeexplore.ieee.org/abstract/document/10131235) 
 * [Dynamic Risk Assessment and Analysis Framework for Large-Scale Cyber-Physical Systems](https://eudl.eu/doi/10.4108/eai.25-1-2022.172997)
 * [Robust Cyber-threat and Vulnerability Information Analyzer for Dynamic Risk Assessment](https://ieeexplore.ieee.org/abstract/document/9647584)
 * [Quantitative Risk Modeling and Analysis for Large-Scale Cyber-Physical Systems](https://ieeexplore.ieee.org/abstract/document/9209654)
 
 ### Updates
-We are in the process of refining and releasing code on the repository, contact the authors for more details and updated information.
+We are in the process of refining and releasing code on the repository; contact the authors for more details and updated information.
