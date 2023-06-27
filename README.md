@@ -32,8 +32,44 @@ We evaluate the proposed framework on a target network and discuss the derived r
 <img src="https://github.com/trucyber/Risk-Assessment-Framework/blob/master/images/CWEs_share_top10.png"><br>
 
 ### Setup Instructions:
-* Python libraries: os, glob, requests, re, zipfile, timeit, json, csv, spacy
-* Graphviz should also be available in the path environment variables. 
+
+You will need the following on your server machine:
+* Graphviz 2.38 (should be available in the path environment variables)
+* Flask 1.1.2
+* Python 3
+* CouchDB 3.1.1
+* Jupyter Notebook
+
+Requirements file:
+
+aniso8601==8.0.0 <br />
+certifi==2022.9.24 <br />
+charset-normalizer==2.1.1 <br />
+click==7.1.2
+colorama==0.4.6
+CouchDB==1.2
+CouchDB2==1.13.0
+Flask==1.1.2
+Flask-RESTful==0.3.8
+Flask-SQLAlchemy==2.4.3
+idna==3.4
+itsdangerous==1.1.0
+Jinja2==2.11.2
+joblib==1.2.0
+lxml==4.9.1
+MarkupSafe==1.1.1
+numpy==1.23.4
+pandas==1.5.1
+pynput==1.7.6
+python-dateutil==2.8.2
+pytz==2020.1
+requests==2.28.1
+scipy==1.9.3
+six==1.15.0
+SQLAlchemy==1.3.18
+tqdm==4.64.1
+urllib3==1.26.12
+Werkzeug==1.0.1
 
 ### Screen shots in action:
 The programming language used is Python and we have used CouchDB as the backend. We are constantly upgrading the code, parts of the tool may not be available because of the continuous upgrades. As soon as we have a fully tested part, it will be available and screen shots will be provided as well.
