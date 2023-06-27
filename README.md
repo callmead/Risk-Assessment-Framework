@@ -81,7 +81,7 @@ Jupyter Notebooks:
 * 7_Control_Mapper.ipynb : Evaluates network nodes for applied security controls.
 * 8_Process_Monitor.ipynb : Monitors running processes on network nodes.
 * 9_Scheduler.ipynb : Responsible for scheduling jobs to keep a check on updates and network activity.
-* Node Analysis.ipynb : Evaluates each network node and prepares a detailed report for each node. 
+* Node Analysis.ipynb : Evaluates each network node and prepares the detailed report for each node. 
 
 Other Python files:
 * cyvia_api.py : API file
@@ -100,6 +100,10 @@ Script files:
 * install_windows_req.bat : Installs required libraries on a Windows network node.
 * linux_client_info.sh : Fetches Linux network node information for the Linux agent.
 * win_client_info.psl : Fetches Windows network node information for the Windows agent. You may need to turn on the power shell execution on Windows nodes; see Turn on scripts on windows.txt.
+
+Network setup:
+
+We tested CyVIA on a simulated network environment. We have used VMWare and VirtualBox. All network nodes should be reachable for the framework to generate analysis.
 
 ### Execution Flow and Screenshots in action:
 We are constantly working on improving and upgrading the CyVIA framework. Stable releases are made available on Github as soon as we finish testing. 
@@ -139,4 +143,4 @@ Read more on CyVIA:
 * [Quantitative Risk Modeling and Analysis for Large-Scale Cyber-Physical Systems](https://ieeexplore.ieee.org/abstract/document/9209654)
 
 ### Updates
-We are in the process of refining and releasing code on the repository; contact the authors for more details and updated information.
+We are in the process of refining and releasing code on the repository, contact the authors for more details and updated information.
