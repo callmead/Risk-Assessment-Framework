@@ -101,13 +101,14 @@ Script files:
 * linux_client_info.sh : Fetches Linux network node information for the Linux agent.
 * win_client_info.psl : Fetches Windows network node information for the Windows agent. You may need to turn on the power shell execution on Windows nodes; see Turn on scripts on windows.txt.
 
-### Execution Flow:
+### Execution Flow and Screenshots in action:
+We are constantly working on improving and upgrading the CyVIA framework. Stable releases are made available on Github as soon as we finish testing. 
+
+The general process flow is as follows:
 * Deploy the agents on network nodes, and ensure all nodes have Python and required libraries installed. Run the schedulers on nodes, and the scan process will start. 
 * On the server side, you may also run the server-side scheduler. Once the client and server-side schedulers communicate, the network node profiles will be created in the CyVIA knowledgebase.
 * After this, the individual Jupyter Notebooks can be run on a need basis to see network analysis.
 
-### Screenshots in action:
-We are constantly working on improving and upgrading the CyVIA framework. Stable releases are made available on Github as soon as we finish testing.
 
 CouchDB
 
