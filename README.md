@@ -4,9 +4,9 @@ The standard risk assessment framework usually requires the use of tools or fram
 * Identify network and service dependencies within cyber infrastructures. 
 * Evaluate individual nodes and the infrastructure as a whole for risk, taking into account implemented security controls and the risk from internal and external adversaries.
 * Identify vulnerabilities within the operating systems and running applications of network nodes, and provide information on associated consequences and mitigation strategies.
-* Classify the vulnerabilities based on type of weakness, severity, and access vectors.
+* Classify the vulnerabilities based on the type of weakness, severity, and access vectors.
 * Infrastructure-based top 10 most vulnerable products.
-* Highlight products based on mean severity, vulnerability scores, and number of vulnerabilities.
+* Highlight products based on mean severity, vulnerability scores, and the number of vulnerabilities.
 * Identify high-priority vulnerabilities and weakness types that defenders should prioritize for remediation.
 * Generate relational analyses between the found vulnerabilities, products, and weakness types.
 * Monitor for anomalous user activities based on recent adversarial trends.
@@ -73,41 +73,41 @@ Werkzeug==1.0.1 <br />
 
 Jupyter Notebooks:
 * 1_CWE_Master_Data_CouchDB.ipynb : Create Master Data for CWE referencing from MITRE.
-* 2_Fetch_MITRE_CWE_CSV_Feeds.ipynb : Collect latest CWE feeds from MITRE. 
+* 2_Fetch_MITRE_CWE_CSV_Feeds.ipynb : Collect the latest CWE feeds from MITRE. 
 * 3_Fetch_NVD_JSON_Feeds.ipynb : Collect vulnerability data from NVD.
 * 4_Prepare_Dataset.ipynb : Compile collected files and prepare CyVIA knowledgebase based on the found relationships between the data. 
 * 5_Network_Scanner.ipynb : Scans network for nodes and open ports.
 * 6_Dependency_Mapper.ipynb : Maps service and network dependencies between the found network nodes.
 * 7_Control_Mapper.ipynb : Evaluates network nodes for applied security controls.
 * 8_Process_Monitor.ipynb : Monitors running processes on network nodes.
-* 9_Scheduler.ipynb : Responsible for scheduling jobs for keeping a check on updates and network activity.
-* Node Analysis.ipynb : Evaluates each network node and prepares detailed report for each node. 
+* 9_Scheduler.ipynb : Responsible for scheduling jobs to keep a check on updates and network activity.
+* Node Analysis.ipynb : Evaluates each network node and prepares the detailed report for each node. 
 
 Other Python files:
 * cyvia_api.py : API file
-* agent_linux_v2.py : CyVIA agent for linux nodes to collect node information and pass to server agent.
-* agent_windows_v2.py : CyVIA agent for windows nodes.
-* client_scheduler_v2.py : CyVIA scheduler to keep agent timely running and communicating with server.
-* server_scheduler_v2 : Server side scheduler to interact with client scheduler and keep server up to date.
+* agent_linux_v2.py : CyVIA agent for Linux nodes to collect node information and pass it to server agent.
+* agent_windows_v2.py : CyVIA agent for Windows nodes.
+* client_scheduler_v2.py : CyVIA scheduler to keep the agent timely running and communicating with the server.
+* server_scheduler_v2 : Server side scheduler to interact with client scheduler and keep the server up to date.
 * config.py : Server configuration.
 * functions.py : Functions library for CyVIA.
 * get-pip.py : If pip is not installed on your machine, you can use this file.
 * process_scanner_v2.py : Process scanner for network nodes, works with the client scheduler file.
-* Spinner.py : On Python notebooks if it is taking long time, the spinner spins to let the user know there is a process working in the background.
+* Spinner.py : On Python notebooks, if it takes a long time, the spinner spins to let the user know there is a process working in the background.
 
 Script files:
-* install_linux_req.sh : Installs required libraries on linux network nodes for the agent to work.
-* install_windows_req.bat : Installs required libraries on a windows network node.
-* linux_client_info.sh : Fetches linux network node information for the linux agent.
-* win_client_info.psl : Fetches windows network node information for the windows agent. You may need to turn on the power shell execution on windows nodes, see Turn on scripts on windows.txt.
+* install_linux_req.sh : Installs required libraries on Linux network nodes for the agent to work.
+* install_windows_req.bat : Installs required libraries on a Windows network node.
+* linux_client_info.sh : Fetches Linux network node information for the Linux agent.
+* win_client_info.psl : Fetches Windows network node information for the Windows agent. You may need to turn on the power shell execution on Windows nodes; see Turn on scripts on windows.txt.
 
 ### Execution Flow:
-* Deploy the agents on network nodes, ensure all nodes have Python and required libraries installed. Run the schedulers on nodes and the scan process will start. 
-* On the server side, you may also run the server side scheduler. Once the client and server side schedulers start communicating with each other, the network node profiles will be created in CyVIA knowledgebase.
-* After this, the individual Jupyter Notebooks can be run on need basis to see network analysis.
+* Deploy the agents on network nodes, and ensure all nodes have Python and required libraries installed. Run the schedulers on nodes, and the scan process will start. 
+* On the server side, you may also run the server-side scheduler. Once the client and server-side schedulers communicate, the network node profiles will be created in the CyVIA knowledgebase.
+* After this, the individual Jupyter Notebooks can be run on a need basis to see network analysis.
 
-### Screen shots in action:
-The programming language used is Python and we have used CouchDB as the backend. We are constantly upgrading the code, parts of the tool may not be available because of the continuous upgrades. As soon as we have a fully tested part, it will be available and screen shots will be provided as well.
+### Screenshots in action:
+We are constantly working on improving and upgrading the CyVIA framework. Stable releases are made available on Github as soon as we finish testing.
 
 CouchDB
 
@@ -121,11 +121,11 @@ Then, we collect detailed information on these CWEs.
 
 <img src="https://github.com/trucyber/Risk-Assessment-Framework/blob/master/images/CWE_Details.PNG"><br>
 
-Next we collect CVE Data from NVD Feeds.
+Next, we collect CVE Data from NVD Feeds.
 
 <img src="https://github.com/trucyber/Risk-Assessment-Framework/blob/master/images/NVD_Details.PNG"><br>
 
-After this, we parepare the CyVIA Knowledge-base. 
+After this, we prepare the CyVIA Knowledge-base. 
 
 <img src="https://github.com/trucyber/Risk-Assessment-Framework/blob/master/images/Prepare_dataset.PNG"><br>
 
@@ -138,7 +138,7 @@ Read more on:
 
 
 # Quantitative Risk Modeling and Analysis for Large-Scale Cyber-Physical Systems
-Threats of cyber attacks are very real today and greatly impact everything including the public health sector, economics, electric grids, internet of things (IoT), and national security. The number of new evolving threats and reported vulnerabilities has severely increased in the last few years. Perpetually refined cyber-attacks have set data, organizational assets, organizations, and individuals at considerable risk. Protecting sophisticated networks and interdependent systems, or reducing the impact of cyber-attacks has become a major challenge, where today’s effective countermeasures can be completely ineffective tomorrow. The various risk assessment frameworks and methodologies are either high-level, missing risk metrics values, not suitable for all kinds of networks, or publicly not available. To address this issue, we present a quantitative risk assessment model, that helps to model the organizational security posture, evaluates the security controls in place, and provides an understanding of the associated risks. We further provide a detailed explanation of the formulations and evaluate the proposed model on an industrial scenario.
+Threats of cyber attacks are very real today and greatly impact everything, including the public health sector, economics, electric grids, the Internet of Things (IoT), and national security. The number of new evolving threats and reported vulnerabilities has severely increased in the last few years. Perpetually refined cyber-attacks have set data, organizational assets, organizations, and individuals at considerable risk. Protecting sophisticated networks and interdependent systems or reducing the impact of cyber-attacks has become a major challenge, where today’s effective countermeasures can be completely ineffective tomorrow. The various risk assessment frameworks and methodologies are either high-level, missing risk metrics values, unsuitable for all kinds of networks, or publicly unavailable. To address this issue, we present a quantitative risk assessment model that helps to model the organizational security posture, evaluates the security controls in place, and provides an understanding of the associated risks. We further provide a detailed explanation of the formulations and evaluate the proposed model in an industrial scenario.
 
 <img src="https://github.com/callmead/Risk-Assessment-Framework/blob/master/images/RA-IoT%20(2).png"><br>
 
