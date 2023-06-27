@@ -132,16 +132,10 @@ After this, we prepare the CyVIA Knowledge-base.
 <!--- <img src=""><br> ---> 
 
 Read more on: 
+* [Dynamic Vulnerability Classification for Enhanced Cyber Situational Awareness](https://ieeexplore.ieee.org/abstract/document/10131235) 
 * [Dynamic Risk Assessment and Analysis Framework for Large-Scale Cyber-Physical Systems](https://eudl.eu/doi/10.4108/eai.25-1-2022.172997)
 * [Robust Cyber-threat and Vulnerability Information Analyzer for Dynamic Risk Assessment](https://ieeexplore.ieee.org/abstract/document/9647584)
 * [Quantitative Risk Modeling and Analysis for Large-Scale Cyber-Physical Systems](https://ieeexplore.ieee.org/abstract/document/9209654)
-
-
-# Quantitative Risk Modeling and Analysis for Large-Scale Cyber-Physical Systems
-Threats of cyber attacks are very real today and greatly impact everything, including the public health sector, economics, electric grids, the Internet of Things (IoT), and national security. The number of new evolving threats and reported vulnerabilities has severely increased in the last few years. Perpetually refined cyber-attacks have set data, organizational assets, organizations, and individuals at considerable risk. Protecting sophisticated networks and interdependent systems or reducing the impact of cyber-attacks has become a major challenge, where today’s effective countermeasures can be completely ineffective tomorrow. The various risk assessment frameworks and methodologies are either high-level, missing risk metrics values, unsuitable for all kinds of networks, or publicly unavailable. To address this issue, we present a quantitative risk assessment model that helps to model the organizational security posture, evaluates the security controls in place, and provides an understanding of the associated risks. We further provide a detailed explanation of the formulations and evaluate the proposed model in an industrial scenario.
-
-<img src="https://github.com/callmead/Risk-Assessment-Framework/blob/master/images/RA-IoT%20(2).png"><br>
-
 
 ### Updates
 We are in the process of refining and releasing code on the repository, contact the authors for more details and updated information.
